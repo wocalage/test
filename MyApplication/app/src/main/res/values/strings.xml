@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Test</string>
+
+    <string-array name="app_model">
+        <item>ui</item>
+        <item>net</item>
+        <item>dynamicload</item>
+        <item>database</item>
+        <item>cache</item>
+        <item>framework</item>
+        <item>jni</item>
+        <item>aidl</item>
+    </string-array>
+</resources>
