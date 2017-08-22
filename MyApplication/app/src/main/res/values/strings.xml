@@ -11,4 +11,16 @@
         <item>jni</item>
         <item>aidl</item>
     </string-array>
+    
+    <string-array name="model_ui_name">
+        <item>animation</item>
+        <item>customview</item>
+        <item>dialog</item>
+        <item>fragment</item>
+        <item>imageview</item>
+        <item>listview</item>
+        <item>materialdesign</item>
+        <item>surfaceview</item>
+        <item>webview</item>
+    </string-array>
 </resources>
