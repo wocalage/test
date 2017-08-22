@@ -15,6 +15,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- Model -->
         <activity android:name=".aidl.AIDLActivity"></activity>
         <activity android:name=".cache.CacheActivity"></activity>
         <activity android:name=".database.DatabaseActivity"></activity>
@@ -23,6 +25,19 @@
         <activity android:name=".jni.JNIActivity"></activity>
         <activity android:name=".net.NetActivity"></activity>
         <activity android:name=".ui.UIActivity"></activity>
+
+
+        <!--  UI Model Item -->
+        <activity android:name=".ui.animation.AnimationActivity"></activity>
+        <activity android:name=".ui.customview.CustomViewActivity"></activity>
+        <activity android:name=".ui.dialog.DialogActivity"></activity>
+        <activity android:name=".ui.fragment.FragmentActivity"></activity>
+        <activity android:name=".ui.imageview.ImageViewActivity"></activity>
+        <activity android:name=".ui.listview.ListViewActivity"></activity>
+        <activity android:name=".ui.materialdesign.MaterialDesignActivity"></activity>
+        <activity android:name=".ui.surfaceview.SurfaceViewActivity"></activity>
+        <activity android:name=".ui.webview.WebViewActivity"></activity>
+
 
         <meta-data
             android:name="com.google.android.gms.version"
