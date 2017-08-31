@@ -18,7 +18,7 @@ public class MoveGestureDetector extends BaseGestureDetector {
     private PointF mExtenalPointPoint = new PointF();//用于记录最终结果并返回
     private OnMoveGestureListener mListener;
 
-    private MoveGestureDetector(Context context,OnMoveGestureListener listener) {
+    public MoveGestureDetector(Context context, OnMoveGestureListener listener) {
         super(context);
         mListener = listener;
     }
@@ -117,4 +117,21 @@ public class MoveGestureDetector extends BaseGestureDetector {
         public void onMoveEnd(MoveGestureDetector detector);
     }
 
+    public static class SimpleMoveGesutureDetector implements OnMoveGestureListener{
+
+        @Override
+        public boolean onMoveBegin(MoveGestureDetector detector) {
+            return true;
+        }
+
+        @Override
+        public boolean onMove(MoveGestureDetector detector) {
+            return false;
+        }
+
+        @Override
+        public void onMoveEnd(MoveGestureDetector detector) {
+
+        }
+    }
 }

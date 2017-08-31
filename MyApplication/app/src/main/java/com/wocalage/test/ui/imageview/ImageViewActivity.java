@@ -8,6 +8,10 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 import com.wocalage.test.R;
+import com.wocalage.test.ui.imageview.bigimage.BigImageView;
+
+import java.io.IOException;
+import java.io.InputStream;
 
 /**
  * Created by jiaojian on 2017/8/22.
@@ -16,7 +20,7 @@ import com.wocalage.test.R;
 public class ImageViewActivity extends Activity{
 
     private Button mOpenBigPicture;
-    private ImageView mBigPicture;
+    private BigImageView mBigPicture;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +37,13 @@ public class ImageViewActivity extends Activity{
         mOpenBigPicture.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mBigPicture = (ImageView)findViewById(R.id.iv_big_picture);
+                mBigPicture = (BigImageView) findViewById(R.id.iv_big_picture);
+                try {
+                    InputStream inputStream = getAssets().open("world.jpg");
+                    mBigPicture.setInputStream(inputStream);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             }
         });
     }
